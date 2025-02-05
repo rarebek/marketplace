@@ -1,0 +1,266 @@
+basePath: /api/v1
+definitions:
+  models.CompanySwagger:
+    properties:
+      address:
+        type: string
+      created_at:
+        type: string
+      description:
+        type: string
+      email:
+        type: string
+      id:
+        type: integer
+      name:
+        type: string
+      phone:
+        type: string
+      updated_at:
+        type: string
+      website:
+        type: string
+    type: object
+  models.CreateCompanyRequest:
+    properties:
+      address:
+        type: string
+      description:
+        type: string
+      email:
+        type: string
+      name:
+        type: string
+      phone:
+        type: string
+      website:
+        type: string
+    type: object
+  models.CreateCompanyResponse:
+    properties:
+      company:
+        $ref: '#/definitions/models.CompanySwagger'
+      message:
+        type: string
+    type: object
+  models.DeleteCompanyResponse:
+    properties:
+      message:
+        type: string
+    type: object
+  models.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+  models.GetCompanyResponse:
+    properties:
+      company:
+        $ref: '#/definitions/models.CompanySwagger'
+    type: object
+  models.ListCompaniesResponse:
+    properties:
+      companies:
+        items:
+          $ref: '#/definitions/models.CompanySwagger'
+        type: array
+      limit:
+        type: integer
+      page:
+        type: integer
+      total:
+        type: integer
+    type: object
+  models.UpdateCompanyRequest:
+    properties:
+      address:
+        type: string
+      description:
+        type: string
+      email:
+        type: string
+      name:
+        type: string
+      phone:
+        type: string
+      website:
+        type: string
+    type: object
+  models.UpdateCompanyResponse:
+    properties:
+      company:
+        $ref: '#/definitions/models.CompanySwagger'
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: TEST
+  title: API
+  version: "1.7"
+paths:
+  /companies:
+    get:
+      consumes:
+      - application/json
+      description: This endpoint retrieves all companies with pagination and search.
+      parameters:
+      - default: 1
+        description: Page number
+        in: query
+        name: page
+        type: integer
+      - default: 10
+        description: Number of items per page
+        in: query
+        name: limit
+        type: integer
+      - description: Search term for company name or description
+        in: query
+        name: search
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.ListCompaniesResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: List companies
+      tags:
+      - Company
+  /companies/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: This endpoint deletes a company by its ID.
+      parameters:
+      - description: Company ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.DeleteCompanyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Delete a company
+      tags:
+      - Company
+    get:
+      consumes:
+      - application/json
+      description: This endpoint retrieves a company by its ID.
+      parameters:
+      - description: Company ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.GetCompanyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get a company
+      tags:
+      - Company
+    put:
+      consumes:
+      - application/json
+      description: This endpoint edits an existing company.
+      parameters:
+      - description: Company ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      - description: Company details to edit
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/models.UpdateCompanyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.UpdateCompanyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Edit a company
+      tags:
+      - Company
+  /companies/add:
+    post:
+      consumes:
+      - application/json
+      description: This endpoint adds a new company.
+      parameters:
+      - description: Company details to add
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/models.CreateCompanyRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.CreateCompanyResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Add a company
+      tags:
+      - Company
+securityDefinitions:
+  ApiKeyAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"

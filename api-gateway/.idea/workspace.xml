@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59b8cf8b-0baf-4967-9e5a-2fd3fa9b5d60" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/api-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/api-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/athlete-handlers/athlete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/auth-handlers/auth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/country-handlers/country.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/event-handlers/event.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/medal-handlers/medal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/handlers/stream-handlers/stream_handler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/athlete_service/athlete.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/auth_service/auth.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/country_service/country.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/event_service/event.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/medal_service/medal.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/stream_service/streaming_service.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genproto/stream_service/streaming_service_grpc.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/athlete_service/athlete.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/auth_service/auth.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/country_service/country.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/event_service/event.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/medal_service/medal.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/stream_service/streaming_service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/gen-proto.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/gen-proto.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/.generated_env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/additional.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/api/api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/generate_db_url.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/genproto/athlete_service/athlete.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/genproto/auth_service/auth.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/genproto/country_service/country.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/genproto/event_service/event.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/genproto/medal_service/medal.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/internal/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/internal/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/internal/storage/athlete_postgres.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/internal/storage/athlete_suite_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/internal/storage/db.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/migrations/000001_tables_up.down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/migrations/000001_tables_up.up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/athlete_service/athlete.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/auth_service/auth.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/country_service/country.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/event_service/event.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/medal_service/medal.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/protos/stream_service/streaming_service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athlete-service/scripts/gen-proto.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../pkg/mod/golang.org/toolchain@v0.0.1-go1.22.3.linux-amd64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2sbytNSx9AsQAvnqTZcN3AjsC3m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/home/rare",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11119792" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="PR AI Assistant" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="make" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-d297c17c1fbd-d82d926f19eb-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.22562.186" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-GO-243.22562.186" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

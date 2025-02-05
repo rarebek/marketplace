@@ -1,0 +1,53 @@
+version: '3.9'
+
+services:
+  # api-gateway:
+  #   build:
+  #     context: ./api-gateway
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "9090:9090"
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   networks:
+  #     - my-network
+
+  # company-service:
+  #   build:
+  #     context: ./company-service
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "6666:6666"
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   networks:
+  #     - my-network
+
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: aaaa
+      POSTGRES_DB: olympydb
+      PGDATA: /data/postgres/olympydb
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - my-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  db:
+
+networks:
+  my-network:
+    driver: bridge
