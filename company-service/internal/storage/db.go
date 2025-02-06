@@ -6,7 +6,6 @@ import (
 	"log"
 	"olympy/company-service/internal/config"
 
-	"github.com/k0kubun/pp"
 	_ "github.com/lib/pq"
 )
 
@@ -18,7 +17,6 @@ func ConnectDB(config config.Config) (*sql.DB, error) {
 		config.Database.Host,
 		config.Database.Port,
 	)
-	pp.Println(config.Database.Password)
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		return nil, err
